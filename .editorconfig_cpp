@@ -78,7 +78,7 @@ ij_c_align_multiline_assignment = true
 ij_c_align_multiline_binary_operation = false
 ij_c_align_multiline_chained_methods = false
 ij_c_align_multiline_for = true
-ij_c_align_multiline_ternary_operation = true
+
 ij_c_array_initializer_comma_on_next_line = false
 
 # 数组大括号
@@ -118,7 +118,7 @@ ij_c_copy_is_deep = false
 ij_c_create_interface_for_categories = true
 ij_c_declare_generated_methods = true
 ij_c_description_include_member_names = true
-ij_c_discharged_short_ternary_operator = false
+
 ij_c_do_not_add_breaks = false
 ij_c_else_on_new_line = false
 
@@ -152,9 +152,8 @@ ij_c_generate_instance_variables_for_properties = ask
 ij_c_generate_operators_as_members = true
 
 # 头文件 ifdefine 策略
-ij_c_header_guard_style_pattern = ${PROJECT_NAME}_${PROJECT_REL_PATH}_${FILE_NAME}_${EXT}
+ij_c_header_guard_style_pattern = ${PROJECT_REL_PATH}_${FILE_NAME}_${EXT}
 
-ij_c_in_line_short_ternary_operator = true
 
 ij_c_indent_block_comment = true
 ij_c_indent_c_struct_members = 2
@@ -189,6 +188,7 @@ ij_c_keep_blank_lines_before_end = 1
 ij_c_keep_blank_lines_before_right_brace = 1
 ij_c_keep_blank_lines_in_code = 1
 ij_c_keep_blank_lines_in_declarations = 1
+# 指令行首对其
 ij_c_keep_directive_at_first_column = true
 ij_c_keep_first_column_comment = true
 ij_c_keep_line_breaks = true
@@ -360,9 +360,13 @@ ij_c_template_parameters_new_line_after_lt = false
 ij_c_template_parameters_new_line_before_gt = false
 ij_c_template_parameters_wrap = off
 
-ij_c_ternary_operation_signs_on_next_line = true
+# 三元操作符
 ij_c_ternary_operation_wrap = normal
+ij_c_in_line_short_ternary_operator = true
+ij_c_discharged_short_ternary_operator = false
+ij_c_ternary_operation_signs_on_next_line = true
 
+# const int x;
 ij_c_type_qualifiers_placement = before
 
 ij_c_use_modern_casts = true
