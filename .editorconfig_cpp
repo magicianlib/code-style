@@ -42,13 +42,6 @@ ij_c_method_brace_placement = end_of_line
 ij_c_function_brace_placement = end_of_line
 ij_c_namespace_brace_placement = end_of_line
 
-# 指针和引用紧跟声明 int*, int&, int&&
-ij_c_space_before_pointer_in_declaration = false
-ij_c_space_after_pointer_in_declaration = true
-ij_c_space_before_reference_in_declaration = false
-ij_c_space_after_reference_in_declaration = true
-ij_c_space_after_reference_in_rvalue = true
-
 # 强制使用花括号
 ij_c_do_while_brace_force = always
 ij_c_while_brace_force = always
@@ -78,7 +71,6 @@ ij_c_align_multiline_assignment = true
 ij_c_align_multiline_binary_operation = false
 ij_c_align_multiline_chained_methods = false
 ij_c_align_multiline_for = true
-
 ij_c_array_initializer_comma_on_next_line = false
 
 # 数组大括号
@@ -154,6 +146,12 @@ ij_c_generate_operators_as_members = true
 # 头文件 ifdefine 策略
 ij_c_header_guard_style_pattern = ${PROJECT_REL_PATH}_${FILE_NAME}_${EXT}
 
+# 三元操作符
+ij_c_ternary_operation_signs_on_next_line = true
+ij_c_ternary_operation_wrap = normal
+ij_c_align_multiline_ternary_operation = true
+ij_c_discharged_short_ternary_operator = false
+ij_c_in_line_short_ternary_operator = true
 
 ij_c_indent_block_comment = true
 ij_c_indent_c_struct_members = 2
@@ -181,6 +179,7 @@ ij_c_introduce_prop_to_private_category = false
 ij_c_introduce_static_consts = true
 ij_c_introduce_use_ns_types = false
 
+# 实例变量 int _name
 ij_c_ivars_prefix = _
 ij_c_ivars_suffix =
 
@@ -188,7 +187,6 @@ ij_c_keep_blank_lines_before_end = 1
 ij_c_keep_blank_lines_before_right_brace = 1
 ij_c_keep_blank_lines_in_code = 1
 ij_c_keep_blank_lines_in_declarations = 1
-# 指令行首对其
 ij_c_keep_directive_at_first_column = true
 ij_c_keep_first_column_comment = true
 ij_c_keep_line_breaks = true
@@ -228,6 +226,13 @@ ij_c_shift_operation_align_multiline = true
 ij_c_shift_operation_wrap = normal
 ij_c_show_non_virtual_functions = false
 
+# 指针和引用空格紧跟声明 int*, int&, int&&
+ij_c_space_before_pointer_in_declaration = false
+ij_c_space_after_pointer_in_declaration = true
+ij_c_space_before_reference_in_declaration = false
+ij_c_space_after_reference_in_declaration = true
+ij_c_space_after_reference_in_rvalue = true
+# 其他空格
 ij_c_space_after_colon = true
 ij_c_space_after_colon_in_foreach = true
 ij_c_space_after_colon_in_selector = false
@@ -360,13 +365,6 @@ ij_c_template_parameters_new_line_after_lt = false
 ij_c_template_parameters_new_line_before_gt = false
 ij_c_template_parameters_wrap = off
 
-# 三元操作符
-ij_c_ternary_operation_wrap = normal
-ij_c_in_line_short_ternary_operator = true
-ij_c_discharged_short_ternary_operator = false
-ij_c_ternary_operation_signs_on_next_line = true
-
-# const int x;
 ij_c_type_qualifiers_placement = before
 
 ij_c_use_modern_casts = true
@@ -374,6 +372,10 @@ ij_c_use_setters_in_constructor = true
 
 ij_c_while_on_new_line = false
 ij_c_wrap_property_declaration = off
+
+#***********************************************
+#  Cmake
+#***********************************************
 
 [{*.cmake,CMakeLists.txt}]
 ij_cmake_align_command_call_r_par = false
