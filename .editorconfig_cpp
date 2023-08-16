@@ -63,6 +63,7 @@ ij_c_add_brief_tag = false
 ij_c_add_getter_prefix = true
 ij_c_add_setter_prefix = true
 
+# 对齐
 ij_c_align_dictionary_pair_values = false
 ij_c_align_group_field_declarations = false
 ij_c_align_init_list_in_columns = false
@@ -80,11 +81,20 @@ ij_c_array_initializer_wrap = normal
 
 ij_c_assignment_wrap = normal
 
+# 二元操作符
 ij_c_binary_operation_sign_on_next_line = true
 ij_c_binary_operation_wrap = normal
 
+# 三元操作符
+ij_c_ternary_operation_signs_on_next_line = true
+ij_c_ternary_operation_wrap = normal
+ij_c_align_multiline_ternary_operation = true
+ij_c_discharged_short_ternary_operator = false
+ij_c_in_line_short_ternary_operator = true
+
+# 空行
 ij_c_blank_lines_after_class_header = 0
-ij_c_blank_lines_after_imports = 0
+ij_c_blank_lines_after_imports = 1
 ij_c_blank_lines_around_class = 0
 ij_c_blank_lines_around_field = 0
 ij_c_blank_lines_around_field_in_interface = 0
@@ -95,8 +105,10 @@ ij_c_blank_lines_around_properties_in_declaration = 0
 ij_c_blank_lines_around_properties_in_interface = 0
 ij_c_blank_lines_before_imports = 0
 ij_c_blank_lines_before_method_body = 0
-
-ij_c_block_comment_at_first_column = false
+ij_c_keep_blank_lines_before_end = 1
+ij_c_keep_blank_lines_before_right_brace = 1
+ij_c_keep_blank_lines_in_code = 1
+ij_c_keep_blank_lines_in_declarations = 1
 
 ij_c_catch_on_new_line = false
 
@@ -146,14 +158,7 @@ ij_c_generate_operators_as_members = true
 # 头文件 ifdefine 策略
 ij_c_header_guard_style_pattern = ${PROJECT_REL_PATH}_${FILE_NAME}_${EXT}
 
-# 三元操作符
-ij_c_ternary_operation_signs_on_next_line = true
-ij_c_ternary_operation_wrap = normal
-ij_c_align_multiline_ternary_operation = true
-ij_c_discharged_short_ternary_operator = false
-ij_c_in_line_short_ternary_operator = true
 
-ij_c_indent_block_comment = true
 ij_c_indent_c_struct_members = 2
 ij_c_indent_case_from_switch = false
 ij_c_indent_class_members = 2
@@ -183,12 +188,7 @@ ij_c_introduce_use_ns_types = false
 ij_c_ivars_prefix = _
 ij_c_ivars_suffix =
 
-ij_c_keep_blank_lines_before_end = 1
-ij_c_keep_blank_lines_before_right_brace = 1
-ij_c_keep_blank_lines_in_code = 1
-ij_c_keep_blank_lines_in_declarations = 1
 ij_c_keep_directive_at_first_column = true
-ij_c_keep_first_column_comment = true
 ij_c_keep_line_breaks = true
 
 # Lambda
@@ -198,9 +198,6 @@ ij_c_lambda_capture_list_comma_on_next_line = false
 ij_c_lambda_capture_list_new_line_after_lbracket = false
 ij_c_lambda_capture_list_new_line_before_rbracket = false
 ij_c_lambda_capture_list_wrap = off
-
-ij_c_line_comment_add_space = true
-ij_c_line_comment_at_first_column = false
 
 ij_c_method_call_arguments_align_by_colons = true
 ij_c_method_call_arguments_align_multiline = false
@@ -232,6 +229,7 @@ ij_c_space_after_pointer_in_declaration = true
 ij_c_space_before_reference_in_declaration = false
 ij_c_space_after_reference_in_declaration = true
 ij_c_space_after_reference_in_rvalue = true
+
 # 其他空格
 ij_c_space_after_colon = true
 ij_c_space_after_colon_in_foreach = true
@@ -339,12 +337,19 @@ ij_c_structured_binding_list_new_line_after_lbracket = false
 ij_c_structured_binding_list_new_line_before_rbracket = false
 ij_c_structured_binding_list_wrap = off
 
+# superclass
 ij_c_superclass_list_after_colon = never
 ij_c_superclass_list_align_multiline = true
 ij_c_superclass_list_before_colon = if_long
 ij_c_superclass_list_comma_on_next_line = false
 ij_c_superclass_list_wrap = on_every_item
 
+# 注释
+ij_c_indent_block_comment = true
+ij_c_keep_first_column_comment = true
+ij_c_block_comment_at_first_column = false
+ij_c_line_comment_add_space = true
+ij_c_line_comment_at_first_column = false
 ij_c_tag_prefix_of_block_comment = at
 ij_c_tag_prefix_of_line_comment = back_slash
 
