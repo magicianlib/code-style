@@ -18,7 +18,7 @@ insert_final_newline = false
 # 移除行位空格
 trim_trailing_whitespace = true
 # 每行最大字符
-max_line_length = 80
+max_line_length = 120
 ij_formatter_off_tag = @formatter:off
 ij_formatter_on_tag = @formatter:on
 ij_formatter_tags_enabled = true
@@ -140,7 +140,7 @@ ij_c_function_call_arguments_new_line_after_lpar = false
 ij_c_function_call_arguments_new_line_before_rpar = false
 ij_c_function_call_arguments_wrap = on_every_item
 ij_c_function_non_top_after_return_type_wrap = off
-ij_c_function_parameters_align_multiline = true
+ij_c_function_parameters_align_multiline = false
 ij_c_function_parameters_align_multiline_pars = false
 ij_c_function_parameters_comma_on_next_line = false
 ij_c_function_parameters_new_line_after_lpar = false
@@ -223,12 +223,17 @@ ij_c_shift_operation_align_multiline = true
 ij_c_shift_operation_wrap = normal
 ij_c_show_non_virtual_functions = false
 
-# 指针和引用空格紧跟声明 int*, int&, int&&
-ij_c_space_before_pointer_in_declaration = false
-ij_c_space_after_pointer_in_declaration = true
-ij_c_space_before_reference_in_declaration = false
-ij_c_space_after_reference_in_declaration = true
-ij_c_space_after_reference_in_rvalue = true
+# 指针和引用空格紧跟声明, 下面的配置效果如下:
+#   int *, int &, int &&, *val
+#
+# ij 的 editorconfig 无法实现如下效果:
+#   int*, int&, int&&, *val
+#
+ij_c_space_before_pointer_in_declaration = true
+ij_c_space_after_pointer_in_declaration = false
+ij_c_space_before_reference_in_declaration = true
+ij_c_space_after_reference_in_declaration = false
+ij_c_space_after_reference_in_rvalue = false
 
 # 其他空格
 ij_c_space_after_colon = true
