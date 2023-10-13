@@ -1,0 +1,32 @@
+name: sync github repo to gitee mirror
+
+on: push
+
+jobs:
+  mirror-sync:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Mirror the Github repos to Gitee.
+        uses: Yikun/hub-mirror-action@master
+
+        with:
+          cache_path: /github/workspace/hub-mirror-cache
+
+          src: "github/${{ github.repository_owner }}"
+          dst: "gitee/${{ github.repository_owner }}"
+
+          dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+          dst_token: ${{ secrets.GITEE_TOKEN }}
+
+          # org or user, default is user
+          account_type: user
+          force_update: true
+          debug: true
+
+          # current repostory name
+          # static_list: ${{ github.event.repository.name }}
