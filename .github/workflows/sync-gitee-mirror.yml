@@ -15,7 +15,6 @@ jobs:
         uses: Yikun/hub-mirror-action@master
 
         with:
-          # cache_path: /github/workspace/hub-mirror-cache
 
           src: github/magicianlib
           dst: gitee/magicianlib
@@ -25,6 +24,8 @@ jobs:
 
           # org or user, default is user
           account_type: user
+
+          # 强制推送
           force_update: true
           debug: true
 
