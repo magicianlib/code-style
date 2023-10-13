@@ -28,5 +28,5 @@ jobs:
           force_update: true
           debug: true
 
-          # current repostory name
-          # static_list: ${{ github.event.repository.name }}
+          # 只同步当前仓库
+          static_list: ${{ github.event.repository.name }}
