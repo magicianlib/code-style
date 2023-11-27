@@ -24,7 +24,7 @@ AllowShortFunctionsOnASingleLine: InlineOnly
 AllowShortLambdasOnASingleLine: Inline
 AllowShortLoopsOnASingleLine: false
 # 构造函数参数堆叠方式
-PackConstructorInitializers: NextLineOnly
+PackConstructorInitializers: CurrentLine
 # 模板声明后添加空格
 SpaceAfterTemplateKeyword: false
 # 指针和引用操作符对其方式:
