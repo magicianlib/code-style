@@ -42,3 +42,5 @@ AccessModifierOffset: -1
 CompactNamespaces: false
 # 命名空间尾部自动插入结束字符
 FixNamespaceComments: true
+# 定义之间增加空行
+SeparateDefinitionBlocks: Always
