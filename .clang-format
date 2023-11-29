@@ -44,3 +44,5 @@ CompactNamespaces: false
 FixNamespaceComments: true
 # 定义之间增加空行
 SeparateDefinitionBlocks: Always
+# 访问修饰符(public/private/protected)之前是否插入空行
+EmptyLineBeforeAccessModifier: Always
