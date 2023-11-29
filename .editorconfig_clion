@@ -7,16 +7,18 @@ root = true
 [*]
 charset = utf-8
 end_of_line = lf
+
+# 移除尾部空行
+insert_final_newline = false
+# 移除行位空格
+trim_trailing_whitespace = true
+
 # 空格缩进
 indent_style = space
 # 空格缩进数量
 indent_size = 2
 ij_continuation_indent_size = 2
 tab_width = 2
-# 移除尾部空行
-insert_final_newline = false
-# 移除行位空格
-trim_trailing_whitespace = true
 # 每行最大字符
 max_line_length = 120
 ij_formatter_off_tag = @formatter:off
@@ -25,8 +27,9 @@ ij_formatter_tags_enabled = true
 ij_formatter_enabled = true
 ij_smart_tabs = false
 ij_visual_guides =
+
 # 打字过程中不允许换行
-ij_wrap_on_typing = false
+ij_wrap_on_typing = true
 
 #***********************************************
 #  C/C++
