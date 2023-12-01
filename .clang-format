@@ -20,8 +20,8 @@ AllowShortIfStatementsOnASingleLine: Never
 AllowShortBlocksOnASingleLine: Never
 AllowShortCaseLabelsOnASingleLine: false
 AllowShortEnumsOnASingleLine: false
-AllowShortFunctionsOnASingleLine: InlineOnly
-AllowShortLambdasOnASingleLine: Inline
+AllowShortFunctionsOnASingleLine: None
+AllowShortLambdasOnASingleLine: Empty
 AllowShortLoopsOnASingleLine: false
 # 构造函数参数堆叠方式
 PackConstructorInitializers: CurrentLine
