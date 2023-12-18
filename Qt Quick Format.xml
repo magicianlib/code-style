@@ -7,7 +7,7 @@
   <valuemap type="QVariantMap">
    <value type="bool" key="AutoSpacesForTabs">false</value>
    <value type="int" key="IndentSize">2</value>
-   <value type="int" key="LineLength">80</value>
+   <value type="int" key="LineLength">120</value>
    <value type="int" key="PaddingMode">1</value>
    <value type="bool" key="SpacesForTabs">true</value>
    <value type="int" key="TabSize">1</value>
