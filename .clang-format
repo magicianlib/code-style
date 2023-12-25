@@ -21,12 +21,16 @@ AllowShortBlocksOnASingleLine: Never
 AllowShortCaseLabelsOnASingleLine: false
 AllowShortEnumsOnASingleLine: false
 AllowShortFunctionsOnASingleLine: None
-AllowShortLambdasOnASingleLine: Empty
+AllowShortLambdasOnASingleLine: Inline
 AllowShortLoopsOnASingleLine: false
 # 构造函数参数堆叠方式
 PackConstructorInitializers: CurrentLine
 # 模板声明后添加空格
 SpaceAfterTemplateKeyword: false
+# 修饰符对其方式:
+# 左侧: `const int a;`
+# 右侧: `int const a;`
+QualifierAlignment: Left
 # 指针和引用操作符对其方式:
 # `int* a; int& b; *a = b;`
 PointerAlignment: Left
@@ -41,7 +45,7 @@ AccessModifierOffset: -1
 # 命名空间紧凑布局
 CompactNamespaces: false
 # 命名空间尾部自动插入结束字符
-FixNamespaceComments: true
+FixNamespaceComments: false
 # 定义之间增加空行
 SeparateDefinitionBlocks: Always
 # 访问修饰符(public/private/protected)之前是否插入空行
