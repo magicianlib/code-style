@@ -40,8 +40,8 @@ SpaceAroundPointerQualifiers: Default
 DerivePointerAlignment: false
 # 命名空间缩进方式(不缩进)
 NamespaceIndentation: None
-# 访问修饰符缩进进(缩进2个单位)
-AccessModifierOffset: -2
+# 访问修饰符缩进进(缩进4个单位)
+AccessModifierOffset: -4
 # 命名空间紧凑布局
 CompactNamespaces: false
 # 命名空间尾部自动插入结束字符
