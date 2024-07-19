@@ -1,0 +1,54 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  // 自动更新
+  "auto_update": true,
+  // 字体大小
+  "ui_font_size": 19,
+  "buffer_font_size": 19,
+  // 自动格式化
+  "format_on_save": "on",
+  // 保存时移除行尾空格
+  "remove_trailing_whitespace_on_save": true,
+  "tab_bar": {
+    // 是否显示导航历史按钮
+    "show_nav_history_buttons": false
+  },
+  // 光标闪缩
+  "cursor_blink": false,
+  // 高亮当前行
+  "current_line_highlight": "line",
+  // 代码诊断
+  "diagnostics": {
+    "include_warnings": true
+  },
+  // 主题
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "One Dark"
+  },
+  // 命令终端
+  "terminal": {
+    // 打开当前项目位置
+    "working_directory": "current_project_directory",
+    // 命令终端显示位置
+    "dock": "right"
+  },
+  "languages": {
+    "Rust": {
+      // 启用语言服务
+      "enable_language_server": true,
+      // 保存时自动格式化
+      "format_on_save": "on",
+      // 保存时移除行尾空格
+      "remove_trailing_whitespace_on_save": true
+    }
+  }
+}
