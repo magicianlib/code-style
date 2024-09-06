@@ -7,11 +7,15 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  // 快捷键
+  "base_keymap": "VSCode",
   // 自动更新
   "auto_update": true,
   // 字体大小
   "ui_font_size": 19,
   "buffer_font_size": 19,
+  // 自动保存
+  "autosave": "on_window_change",
   // 自动格式化
   "format_on_save": "on",
   // 保存时移除行尾空格
@@ -45,10 +49,14 @@
     "Rust": {
       // 启用语言服务
       "enable_language_server": true,
+      // 格式化器
+      "formatter": "language_server",
       // 保存时自动格式化
       "format_on_save": "on",
       // 保存时移除行尾空格
       "remove_trailing_whitespace_on_save": true
     }
-  }
+  },
+  // 代理
+  "proxy": "socks5://127.0.0.1:7897"
 }
